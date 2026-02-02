@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cout << "Enter a number: ";
+    cin >> n;
+
+    int count = 0;   // to store how many primes
+
+    cout << "Prime numbers up to " << n << " are: " << endl;
+
+    for (int i = 2; i <= n; i++) {
+        bool isPrime = true;
+
+        for (int j = 2; j * j <= i; j++) {
+            if (i % j == 0) {
+                isPrime = false;
+                break;
+            }
+        }
+
+        if (isPrime) {
+            cout << i << " ";
+            count++;        // increase count for each prime
+        }
+    }
+
+    cout << endl;
+    cout << "Total number of prime numbers = " << count << endl;
+
+    return 0;
+}
