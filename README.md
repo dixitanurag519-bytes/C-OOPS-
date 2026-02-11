@@ -1,2 +1,3 @@
 # C-OOPS-
-This one contains all codes teached to me in 2 nd sem
+This repository contain all the C++ language OOPS related codes
+This repository has question from basic to moderate level 
