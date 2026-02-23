@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+class Student {
+private:
+    int roll;
+
+public:
+    // Simple Constructor
+    Student() {
+        roll = 10;
+        cout << "Constructor is called!" << endl;
+        cout << "Roll Number is: " << roll << endl;
+    }
+};
+
+int main() {
+    Student s1;   // Constructor automatically called
+    return 0;
+}
