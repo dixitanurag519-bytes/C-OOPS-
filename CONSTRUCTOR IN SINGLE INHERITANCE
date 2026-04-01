@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+// Base class
+class Person {
+public:
+    Person() {
+        cout << "Person constructor called" << endl;
+    }
+};
+
+// Derived class
+class Student : public Person {
+public:
+    Student() {
+        cout << "Student constructor called" << endl;
+    }
+};
+
+int main() {
+    Student s;  // Object creation
+
+    return 0;
+}
